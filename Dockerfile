@@ -10,6 +10,8 @@ RUN apt-add-repository -y ppa:ansible/ansible
 RUN apt-get update
 RUN apt-get install -qy ansible
 
+COPY ansible /ansible
+
 VOLUME /ansible
 WORKDIR /ansible
 
